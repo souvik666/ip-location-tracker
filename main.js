@@ -14,7 +14,7 @@ async function getIp() {
   let {
     dns: { geo, ip },
   } = data;
-  document.getElementById(`gretings`).innerHTML = `Weclome ${ip}`;
+  document.getElementById(`gretings`).innerHTML = `Welcome ${ip}`;
   TakeInputandtrackclient(ip);
 }
 /* 5c621fd3882740b8eb60ccae4ae9c462
@@ -31,7 +31,7 @@ async function TakeInputandtrackclient(ip) {
   let { latitude, longitude } = data;
   handelmap(longitude, latitude);
   appendIpInfo(data);
-  console.log(data);
+  //console.log(data);
 }
 
 function handelmap(lang, lat) {
