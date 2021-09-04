@@ -1,0 +1,38 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<nav>
+    <i class="fa fa-superpowers" aria-hidden="true" id="logo">Location Tracker</i>
+    <p id="gretings"></p>
+</nav>
+
+<body onload="getIp()">
+    <div id="grid">
+        <div id="infocont">
+            <input type="text" id="input" placeholder="Please eneter The Ip"> <button onclick="handleUserInput()"
+                id="btn">Search</button>
+
+            <br>
+            <div id="infostack">
+                <div id="country_flag_emoji"></div>
+                <div id="city"></div>
+                <div id="continent_name"></div>
+                <div id="country_name"></div>
+                <div id="capital"></div>
+                <div id="latitude"></div>
+                <div id="longitude"></div>
+                <div id="zip"></div>
+                <div id="region_name"></div>
+                <div id="continent_code"></div>
+            </div>
+        </div>
+        <div id="mapcont">
+            <div id='map'></div>
+        </div>
+
+    </div>
+</body>
+<script src="main.js"></script>
