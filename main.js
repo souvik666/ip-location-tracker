@@ -9,7 +9,7 @@ function ValidateIPaddress(ipaddress) {
   return false;
 }
 async function getIp() {
-  let res = await fetch(`http://edns.ip-api.com/json`);
+  let res = await fetch(`https://edns.ip-api.com/json`);
   let data = await res.json();
   let {
     dns: { geo, ip },
